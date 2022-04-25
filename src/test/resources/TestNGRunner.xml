@@ -23,4 +23,10 @@
         </classes>
     </test>
 
+    <test name="Smoke">
+        <classes>
+            <class name="test_app.smoke.registration.Profile"/>
+        </classes>
+    </test>
+
 </suite>
