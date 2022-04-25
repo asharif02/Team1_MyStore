@@ -11,6 +11,7 @@ import utils.GenerateData;
 
 public class Registration extends TestBasePage {
 
+    // region Sami's Example Test Case
     @Test
     public void testProcessNewUserRegistration() {
         Homepage homepage = new Homepage();
@@ -44,4 +45,7 @@ public class Registration extends TestBasePage {
         Assert.assertTrue(firstName.equalsIgnoreCase(actualFirstName));
         Assert.assertTrue(lastName.equalsIgnoreCase(actualLastName));
     }
+    // endregion
+
+
 }
