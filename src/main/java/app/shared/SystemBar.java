@@ -1,9 +1,6 @@
 package app.shared;
 
-import app.pom.ContactUs;
-import app.pom.Homepage;
-import app.pom.Login;
-import app.pom.SummerDresses;
+import app.pom.*;
 import base.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,8 +26,14 @@ public class SystemBar extends BasePage {
     @FindBy(xpath = "//ul[@style='display: block;']//a[@title='Summer Dresses']")
     public WebElement womenHoverMenuDressesSummerDressesButton;
 
+    @FindBy(xpath = "(//ul[@style='display: none;']//a[@title='Casual Dresses'])[2]")
+    public WebElement dressesHoverMenuCasualDressesButton;
+
     @FindBy(xpath = "//ul[@class='sf-menu clearfix menu-content sf-js-enabled sf-arrows']/li/a[@title='Dresses']")
     public WebElement dressesButton;
+
+    @FindBy(xpath = "(//*[text()='Casual Dresses'])[2]")
+    public WebElement casualDressesButton;
 
     @FindBy(xpath = "//ul[@class='sf-menu clearfix menu-content sf-js-enabled sf-arrows']/li/a[@title='T-shirts']")
     public WebElement tShirtsButton;
@@ -61,10 +64,20 @@ public class SystemBar extends BasePage {
         hoverOverElement(womenButton);
     }
 
+    public void hoverOverDressesButton() {
+        hoverOverElement(dressesButton);
+    }
+
     public SummerDresses clickWomenHoverMenuDressesSummerDressesButton() {
         safeClickOnElement(womenHoverMenuDressesSummerDressesButton);
 
         return new SummerDresses();
+    }
+
+    public CasualDresses clickDressesHoverMenuCasualDressesButton() {
+        safeClickOnElement(casualDressesButton);
+
+        return new CasualDresses();
     }
 
     public boolean isSignedIn() {

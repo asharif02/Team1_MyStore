@@ -1,5 +1,6 @@
 package test_app.smoke.transactions;
 
+import app.pom.CasualDresses;
 import app.pom.Homepage;
 import app.pom.SummerDresses;
 import org.testng.Assert;
@@ -31,7 +32,15 @@ public class ShoppingCart extends TestBasePage {
     }
     // endregion
 
+    @Test
+    public void testAddItemToShoppingCart() {
+        Homepage homepage = new Homepage();
+        homepage.hoverOverDressesButton();
+        CasualDresses casualDresses = homepage.clickDressesHoverMenuCasualDressesButton();
 
+        // test case hovers and clicks, not finished yet
+
+    }
 
 
 }
