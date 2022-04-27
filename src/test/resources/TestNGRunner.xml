@@ -22,5 +22,10 @@
             <class name="test_app.smoke.registration.Registration"/>
         </classes>
     </test>
+    <test name="SmokeLogin">
+        <classes>
+            <class name="test_app.smoke.registration.TestLogin"/>
+        </classes>
+    </test>
 
 </suite>
