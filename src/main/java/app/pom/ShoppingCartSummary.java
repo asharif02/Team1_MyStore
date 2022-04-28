@@ -26,6 +26,10 @@ public class ShoppingCartSummary extends SystemBar {
         webDriverWait.until(ExpectedConditions.visibilityOf(emptyShoppingCartAlertWarning));
     }
 
+    public void removeSingleItem() {
+        clickTrashIcon();
+    }
+
     public ShoppingCartSummary() {
         PageFactory.initElements(driver, this);
     }

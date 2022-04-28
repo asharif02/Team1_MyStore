@@ -1,9 +1,6 @@
 package test_app.smoke.transactions;
 
-import app.pom.CasualDresses;
-import app.pom.Homepage;
-import app.pom.ShoppingCartSummary;
-import app.pom.SummerDresses;
+import app.pom.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import test_base.TestBasePage;
@@ -43,7 +40,7 @@ public class ShoppingCart extends TestBasePage {
     }
 
     @Test
-    public void testRemoveItemFromShoppingCart() throws InterruptedException {
+    public void testRemoveItemFromShoppingCart() {
         CasualDresses casualDresses = CasualDresses.navigateToCasualDresses();
 
         casualDresses.navigateToShoppingCartSummary();
@@ -55,11 +52,15 @@ public class ShoppingCart extends TestBasePage {
     }
 
     @Test
-    public void addMultipleItemsToShoppingCart() {
-        Homepage homepage = new Homepage();
-        homepage.clickDressesButton();
+    public void addMultipleItemsToCart() {
+        Dresses dresses = Dresses.navigateToDresses();
+
+        dresses.addMultipleItemsToCart();
+        ShoppingCartSummary shoppingCartSummary = new ShoppingCartSummary();
+        shoppingCartSummary.removeSingleItem();
+
+        // assertion missing
 
     }
-
 
 }
