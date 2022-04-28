@@ -22,9 +22,17 @@
             <class name="test_app.smoke.registration.Registration"/>
         </classes>
     </test>
+
+    //1
     <test name="SmokeLogin">
         <classes>
             <class name="test_app.smoke.registration.TestLogin"/>
+        </classes>
+    </test>
+    //2
+    <test name="DeleteAddress">
+        <classes>
+            <class name="test_app.functional.DeleteAddress"/>
         </classes>
     </test>
 

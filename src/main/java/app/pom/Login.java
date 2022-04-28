@@ -9,6 +9,18 @@ public class Login extends SystemBar {
 
     public static final String URL = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
 
+    //testcase2 xpath
+    @FindBy(xpath = "//i[@class='icon-building']")
+    public WebElement myAddress;
+
+    @FindBy(xpath = "//i[@class='icon-remove right']")
+    public WebElement deleteMyAddress;
+    // -----------
+
+    //testcase3
+    @FindBy(xpath = "//input[@class='search_query form-control ac_input']")
+    public WebElement searchBar;
+
     @FindBy(id = "email_create")
     public WebElement newEmailAddressInputField;
 
