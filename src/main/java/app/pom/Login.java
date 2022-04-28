@@ -21,6 +21,18 @@ public class Login extends SystemBar {
     @FindBy(xpath = "//input[@class='search_query form-control ac_input']")
     public WebElement searchBar;
 
+    //testcase4
+    @FindBy(xpath = "//input[@class='search_query form-control ac_input']")
+    public WebElement searchBar2;
+
+    @FindBy(xpath = " //*[@id=\"center_column\"]/ul/li[1]\n")
+    public WebElement itemHover;
+
+    @FindBy (xpath = "//*[@id='add_to_cart']/button/span[1]")
+    public WebElement addToCart;
+
+    //------------------
+
     @FindBy(id = "email_create")
     public WebElement newEmailAddressInputField;
 

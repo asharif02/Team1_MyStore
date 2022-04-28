@@ -24,8 +24,5 @@ public class SearchBar extends TestBasePage {
         String URL = driver.getCurrentUrl();
         Assert.assertEquals(URL, "http://automationpractice.com/index.php?controller=search&orderby=position&orderway=desc&search_query=dresses&submit_search=" );
 
-
     }
-
-
 }
