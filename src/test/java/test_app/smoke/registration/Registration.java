@@ -4,6 +4,7 @@ import app.pom.CreateAccount;
 import app.pom.Homepage;
 import app.pom.Login;
 import app.pom.MyAccount;
+import config.Config;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import test_base.TestBasePage;
@@ -47,5 +48,13 @@ public class Registration extends TestBasePage {
     }
     // endregion
 
+    @Test
+    public void testValidLogin() {
+        Homepage homepage = new Homepage();
+        Login login = homepage.clickLoginButton();
+
+        login.login(appConfig.get(Config.AppProperties.USER), appConfig.get(Config.AppProperties.PASSWORD));
+
+    }
 
 }

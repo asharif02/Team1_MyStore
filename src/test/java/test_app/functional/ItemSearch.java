@@ -14,10 +14,12 @@ public class ItemSearch extends TestBasePage {
         String searchTerm = homepage.inputSearchTerm("dresses");
         homepage.clickSearchSubmitButton();
 
+
         String actualSearchTerm = homepage.actualSearchTerm.getText().replace("\"", "");
         System.out.println(actualSearchTerm);
 
         Assert.assertTrue(searchTerm.equalsIgnoreCase(actualSearchTerm));
+
 
     }
 

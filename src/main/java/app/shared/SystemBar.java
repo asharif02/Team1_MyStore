@@ -90,4 +90,8 @@ public class SystemBar extends BasePage {
         return isSignedIn;
     }
 
+    public void clickDressesButton() {
+        clickOnElement(dressesButton);
+    }
+
 }

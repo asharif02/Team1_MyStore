@@ -2,6 +2,7 @@ package test_app.smoke.transactions;
 
 import app.pom.CasualDresses;
 import app.pom.Homepage;
+import app.pom.ShoppingCartSummary;
 import app.pom.SummerDresses;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -34,11 +35,29 @@ public class ShoppingCart extends TestBasePage {
 
     @Test
     public void testAddItemToShoppingCart() {
-        Homepage homepage = new Homepage();
-        homepage.hoverOverDressesButton();
-        CasualDresses casualDresses = homepage.clickDressesHoverMenuCasualDressesButton();
+        CasualDresses casualDresses = CasualDresses.navigateToCasualDresses();
+        casualDresses.addCasualDressToCart();
 
-        // test case hovers and clicks, not finished yet
+        Assert.assertTrue(isElementVisible(casualDresses.greenCheckmark));
+
+    }
+
+    @Test
+    public void testRemoveItemFromShoppingCart() throws InterruptedException {
+        CasualDresses casualDresses = CasualDresses.navigateToCasualDresses();
+
+        casualDresses.navigateToShoppingCartSummary();
+        ShoppingCartSummary shoppingCartSummary = new ShoppingCartSummary();
+        shoppingCartSummary.removeItemFromShoppingCart();
+
+        Assert.assertTrue(isElementVisible(shoppingCartSummary.emptyShoppingCartAlertWarning));
+
+    }
+
+    @Test
+    public void addMultipleItemsToShoppingCart() {
+        Homepage homepage = new Homepage();
+        homepage.clickDressesButton();
 
     }
 
