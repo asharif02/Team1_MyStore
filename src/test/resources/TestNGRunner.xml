@@ -35,5 +35,19 @@
             <class name="test_app.functional.DeleteAddress"/>
         </classes>
     </test>
+    //3
+    <test name="SearchBar">
+        <classes>
+            <class name="test_app.smoke.search.SearchBar"/>
+        </classes>
+    </test>
+    //4
+    <test name="SearchBar">
+        <classes>
+            <class name="test_app.functional.AddToCart"/>
+        </classes>
+    </test>
+    //5
+
 
 </suite>
