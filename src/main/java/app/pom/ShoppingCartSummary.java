@@ -16,6 +16,9 @@ public class ShoppingCartSummary extends SystemBar {
     @FindBy(xpath = "//p[@class='alert alert-warning']")
     public WebElement emptyShoppingCartAlertWarning;
 
+    @FindBy(xpath = "//*[text()='2 Products']")
+    public WebElement productQuantitySummary;
+
 
     public void clickTrashIcon() {
         clickOnElement(trashIcon);
@@ -28,6 +31,7 @@ public class ShoppingCartSummary extends SystemBar {
 
     public void removeSingleItem() {
         clickTrashIcon();
+        webDriverWait.until(ExpectedConditions.visibilityOf(productQuantitySummary));
     }
 
     public ShoppingCartSummary() {

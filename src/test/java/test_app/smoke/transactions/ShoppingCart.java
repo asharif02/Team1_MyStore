@@ -59,7 +59,11 @@ public class ShoppingCart extends TestBasePage {
         ShoppingCartSummary shoppingCartSummary = new ShoppingCartSummary();
         shoppingCartSummary.removeSingleItem();
 
-        // assertion missing
+        String expectedQuantity = "2";
+        String actualQuantity = String.valueOf(shoppingCartSummary.productQuantitySummary.getText().contains("2"));
+        System.out.println(actualQuantity);
+
+        Assert.assertEquals(actualQuantity, expectedQuantity);
 
     }
 
