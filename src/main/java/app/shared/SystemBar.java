@@ -1,9 +1,6 @@
 package app.shared;
 
-import app.pom.ContactUs;
-import app.pom.Homepage;
-import app.pom.Login;
-import app.pom.SummerDresses;
+import app.pom.*;
 import base.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -76,5 +73,9 @@ public class SystemBar extends BasePage {
 
         return isSignedIn;
     }
-
+    // just added this last part because I created TestBlackBlouse class !!!
+    public BlackBlouse clickWomenButton() {
+        safeClickOnElement(womenButton);
+        return new BlackBlouse();
+    }
 }

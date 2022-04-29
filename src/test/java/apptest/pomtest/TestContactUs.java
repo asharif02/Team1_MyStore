@@ -24,6 +24,7 @@ public class TestContactUs extends TestBasePage {
 
         String expectedText = "Your message has been successfully sent to our team";
         String text = "Your message has been successfully sent to our team";
+        System.out.println(expectedText);
         System.out.println(text);
         Assert.assertEquals(expectedText, text);
 
