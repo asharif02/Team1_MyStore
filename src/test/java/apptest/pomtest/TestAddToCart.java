@@ -23,7 +23,7 @@ public class TestAddToCart extends TestBasePage {
 
         String expectedMessage = "Product successfully added to your shopping cart";
         String message = "Product successfully added to your shopping cart";
-        Assert.assertTrue(true,expectedMessage);
-        Assert.assertTrue(true,message);
+        Assert.assertTrue(true, expectedMessage);
+        Assert.assertTrue(true, message);
     }
 }

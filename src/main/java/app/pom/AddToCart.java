@@ -14,7 +14,7 @@ public class AddToCart extends SystemBar {
     // TC_04 Add to Cart
     // Document the test case,(Action, Data, Expected Results), then write code
 
-    @FindBy(xpath = "//input[@id=\"search_query_top\"]")
+    @FindBy(xpath = "//input[@id='search_query_top']")
     public WebElement searchBar;
     @FindBy(xpath = "//button[@name='submit_search']")
     public WebElement searchButton;
