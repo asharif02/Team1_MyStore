@@ -53,6 +53,19 @@
             <class name="test_app.functional.NewWishlist"/>
         </classes>
     </test>
+    //6
+    <test name="Newsletter">
+        <classes>
+            <class name="test_app.functional.Newsletter"/>
+        </classes>
+    </test>
+    //7
+    <test name="ListView">
+        <classes>
+            <class name="test_app.functional.ListView"/>
+        </classes>
+    </test>
+    //8
 
 
 </suite>
