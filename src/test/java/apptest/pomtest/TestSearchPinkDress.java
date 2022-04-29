@@ -1,3 +1,5 @@
+package apptest.pomtest;
+
 import app.pom.Homepage;
 import app.pom.SearchPinkDress;
 import org.testng.Assert;
