@@ -9,6 +9,15 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SummerDresses extends Products {
 
+    //testcase9
+    @FindBy (xpath = "//*[@id='layered_id_attribute_group_1']")
+    public WebElement sizeCheckBox;
+
+    @FindBy (xpath = "//*[@style='background: #434A54;']")
+    public WebElement colorCheckBox;
+
+    //----------------
+
     @FindBy(xpath = "//div[@id='layered_price_slider']/a[1]")
     public WebElement priceSliderLeft;
 

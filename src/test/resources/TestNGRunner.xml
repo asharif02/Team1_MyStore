@@ -72,6 +72,13 @@
         </classes>
     </test>
     //9
+    <test name="ItemSizeAndColor">
+        <classes>
+            <class name="test_app.functional.ItemSizeAndColor"/>
+        </classes>
+    </test>
+    //10
+
 
 
 </suite>
