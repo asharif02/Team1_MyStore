@@ -66,6 +66,12 @@
         </classes>
     </test>
     //8
+    <test name="AddingQuantity">
+        <classes>
+            <class name="test_app.functional.AddingQuantity"/>
+        </classes>
+    </test>
+    //9
 
 
 </suite>
