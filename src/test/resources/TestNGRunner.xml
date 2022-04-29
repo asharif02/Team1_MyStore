@@ -78,6 +78,11 @@
         </classes>
     </test>
     //10
+    <test name="ReviewWriting">
+        <classes>
+            <class name="test_app.functional.ReviewWriting"/>
+        </classes>
+    </test>
 
 
 

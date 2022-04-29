@@ -15,7 +15,6 @@ public class Login extends SystemBar {
 
     @FindBy(xpath = "//i[@class='icon-remove right']")
     public WebElement deleteMyAddress;
-    // -----------
 
     //testcase3
     @FindBy(xpath = "//input[@class='search_query form-control ac_input']")
@@ -70,9 +69,6 @@ public class Login extends SystemBar {
 
     @FindBy (xpath = "//*[@id='submitNewMessage']")
     public WebElement submitttingReview;
-    //testcase8
-  //  @FindBy (xpath = "//*[@class='blockbestsellers']")
-   // public WebElement bestSellerButton;
 
     //------------------
 
