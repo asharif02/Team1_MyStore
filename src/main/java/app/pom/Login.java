@@ -37,6 +37,11 @@ public class Login extends SystemBar {
 
     @FindBy (xpath = "//*[@class='inputTxt form-control']")
     public WebElement wishlistName;
+
+    //testcase6
+    @FindBy (xpath = "//*[@value='Enter your e-mail']")
+    public WebElement subscribingNewsletter;
+
     //------------------
 
 

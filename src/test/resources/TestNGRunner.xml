@@ -48,6 +48,11 @@
         </classes>
     </test>
     //5
+    <test name="NewWishlist">
+        <classes>
+            <class name="test_app.functional.NewWishlist"/>
+        </classes>
+    </test>
 
 
 </suite>
