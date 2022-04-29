@@ -2,8 +2,6 @@ package test_app.functional;
 
 import app.pom.Homepage;
 import app.pom.Login;
-import net.bytebuddy.asm.Advice;
-import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import test_base.TestBasePage;
