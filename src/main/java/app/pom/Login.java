@@ -49,6 +49,10 @@ public class Login extends SystemBar {
     @FindBy(xpath = "//*[@class='icon-th-list']")
     public WebElement listView;
 
+    //testcase8
+  //  @FindBy (xpath = "//*[@class='blockbestsellers']")
+   // public WebElement bestSellerButton;
+
     //------------------
 
 
