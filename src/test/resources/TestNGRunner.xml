@@ -4,86 +4,84 @@
 
     <parameter name="browser" value="chrome"/>
 
-    <test name="BAT - Integration">
-        <parameter name="enabled" value="false"/>
-        <classes>
-            <class name="test_app.build_acceptance.integration.Connectivity"/>
-        </classes>
-    </test>
+<!--    <test name="BAT - Integration">-->
+<!--        <parameter name="enabled" value="false"/>-->
+<!--        <classes>-->
+<!--            <class name="test_app.build_acceptance.integration.Connectivity"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="BAT - System">
-        <classes>
-            <class name="test_app.build_acceptance.system.Authentication"/>
-        </classes>
-    </test>
+<!--    <test name="BAT - System">-->
+<!--        <classes>-->
+<!--            <class name="test_app.build_acceptance.system.Authentication"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="Smoke">
-        <classes>
-            <class name="test_app.smoke.registration.Registration"/>
-        </classes>
-    </test>
+<!--    <test name="Smoke">-->
+<!--        <classes>-->
+<!--            <class name="test_app.smoke.registration.Registration"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    //1
+<!--    //1-->
     <test name="SmokeLogin">
         <classes>
             <class name="test_app.smoke.registration.TestLogin"/>
         </classes>
     </test>
-    //2
+<!--    //2-->
     <test name="DeleteAddress">
         <classes>
             <class name="test_app.functional.DeleteAddress"/>
         </classes>
     </test>
-    //3
+<!--    //3-->
     <test name="SearchBar">
         <classes>
             <class name="test_app.smoke.search.SearchBar"/>
         </classes>
     </test>
-    //4
-    <test name="SearchBar">
+<!--    //4-->
+    <test name="AddToCart">
         <classes>
             <class name="test_app.functional.AddToCart"/>
         </classes>
     </test>
-    //5
+<!--    //5-->
     <test name="NewWishlist">
         <classes>
             <class name="test_app.functional.NewWishlist"/>
         </classes>
     </test>
-    //6
+<!--    //6-->
     <test name="Newsletter">
         <classes>
             <class name="test_app.functional.Newsletter"/>
         </classes>
     </test>
-    //7
+<!--    //7-->
     <test name="ListView">
         <classes>
             <class name="test_app.functional.ListView"/>
         </classes>
     </test>
-    //8
+<!--    //8-->
     <test name="AddingQuantity">
         <classes>
             <class name="test_app.functional.AddingQuantity"/>
         </classes>
     </test>
-    //9
+<!--    //9-->
     <test name="ItemSizeAndColor">
         <classes>
             <class name="test_app.functional.ItemSizeAndColor"/>
         </classes>
     </test>
-    //10
+<!--    //10-->
     <test name="ReviewWriting">
         <classes>
             <class name="test_app.functional.ReviewWriting"/>
         </classes>
     </test>
-
-
 
 </suite>
