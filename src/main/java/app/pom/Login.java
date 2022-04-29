@@ -66,6 +66,11 @@ public class Login extends SystemBar {
         return new MyAccount();
     }
 
+    public void invalidLogin(String email, String password) {
+        inputRegisteredEmailAddress(email);
+        inputPassword(password);
+    }
+
     public void inputRegisteredEmailAddress(String emailAddress) {
         sendKeysToElement(registeredEmailAddressInputField, emailAddress);
     }

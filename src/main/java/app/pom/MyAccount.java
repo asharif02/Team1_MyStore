@@ -7,6 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MyAccount extends SystemBar {
 
+    @FindBy(xpath = "//a[@class='account']")
+    public WebElement accountName;
+
     public MyAccount() {
         PageFactory.initElements(driver, this);
     }

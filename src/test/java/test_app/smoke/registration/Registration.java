@@ -5,6 +5,7 @@ import app.pom.Homepage;
 import app.pom.Login;
 import app.pom.MyAccount;
 import config.Config;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import test_base.TestBasePage;
@@ -54,6 +55,23 @@ public class Registration extends TestBasePage {
         Login login = homepage.clickLoginButton();
 
         login.login(appConfig.get(Config.AppProperties.USER), appConfig.get(Config.AppProperties.PASSWORD));
+        MyAccount myAccount = new MyAccount();
+
+        Assert.assertTrue(isElementVisible(myAccount.accountName));
+
+    }
+
+    @Test
+    public void testInvalidLogin() {
+        Homepage homepage = new Homepage();
+        Login login = homepage.clickLoginButton();
+
+        String email = GenerateData.email();
+        String password = GenerateData.password();
+
+        login.login(email, password);
+
+        Assert.assertTrue(isElementVisible(login.errorMessageBanner));
 
     }
 
