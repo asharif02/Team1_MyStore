@@ -9,7 +9,7 @@ import test_base.TestBasePage;
 public class TestContactUs extends TestBasePage {
 
     // TC_01 Contact Us
-    // Document the test case,(Action, Data, Expected Results), then write test code
+    // Document the test case from MS WORD,(Action, Data, Expected Results), then write test code
 
     @Test
     public void testcontactUsPage() {

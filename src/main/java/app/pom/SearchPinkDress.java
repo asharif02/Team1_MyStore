@@ -11,7 +11,7 @@ public class SearchPinkDress extends SystemBar {
     // Set the URL
     public static final String URL = "http://automationpractice.com/";
     // TC_03 Search Pink Printed Dress
-    // Document the test case,(Action, Data, Expected Results), then write code
+    // Document the test case from MS WORD,(Action, Data, Expected Results), then write code
 
     @FindBy(xpath = "//input[@id=\"search_query_top\"]")
     public WebElement searchPinkDress;

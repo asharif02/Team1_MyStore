@@ -10,7 +10,7 @@ import utils.GenerateData;
 public class TestNewsletter extends TestBasePage {
 
     // TC_05 Subscribing to Newsletter
-    // Document the test case,(Action, Data, Expected Results), then write test code
+    // Document the test case from MS WORD,(Action, Data, Expected Results), then write test code
 
     @Test
     public void testNewsletter(){

@@ -9,7 +9,7 @@ import test_base.TestBasePage;
 public class TestAddToCart extends TestBasePage {
 
     // TC_04 Add to Cart
-    // Document the test case,(Action, Data, Expected Results), then write test code
+    // Document the test case from MS WORD,(Action, Data, Expected Results), then write test code
 
     @Test
     public void testAddToCart(){

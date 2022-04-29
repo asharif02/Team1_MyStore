@@ -11,7 +11,7 @@ public class ContactUs extends SystemBar {
     // Set the URL
     public static final String URL = "http://automationpractice.com/";
     // TC_01 Fill out Contact Us form
-    // Document the test case,(Action, Data, Expected Results), then write code
+    // Document the test case from MS WORD,(Action, Data, Expected Results), then write code
 
     @FindBy(xpath = "//div[@id='contact-link']//a[@href='http://automationpractice.com/index.php?controller=contact']")
     public WebElement contactUsButton;

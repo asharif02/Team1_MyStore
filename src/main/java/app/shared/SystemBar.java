@@ -73,9 +73,4 @@ public class SystemBar extends BasePage {
 
         return isSignedIn;
     }
-    // just added this last part because I created TestBlackBlouse class !!!
-    public BlackBlouse clickWomenButton() {
-        safeClickOnElement(womenButton);
-        return new BlackBlouse();
-    }
 }

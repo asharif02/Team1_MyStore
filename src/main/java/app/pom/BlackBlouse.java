@@ -11,7 +11,7 @@ public class BlackBlouse extends SystemBar {
     // Set the URL
     public static final String URL = "http://automationpractice.com/";
     // TC_02 Find black blouse
-    // Document the test case,(Action, Data, Expected Results), then write code
+    // Document the test case from MS WORD,(Action, Data, Expected Results), then write code
 
     @FindBy(xpath = "//a[@title='Women']")
     public WebElement womenTab;

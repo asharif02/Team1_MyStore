@@ -9,12 +9,12 @@ import test_base.TestBasePage;
 public class TestBlackBlouse extends TestBasePage {
 
     // TC_02 Contact Us
-    // Document the test case,(Action, Data, Expected Results), then write test code
+    // Document the test case from MS WORD,(Action, Data, Expected Results), then write test code
 
     @Test
     public void testBlackBlousePage(){
         Homepage homepage = new Homepage();
-        BlackBlouse blackBlouse = homepage.clickWomenButton();
+        BlackBlouse blackBlouse = new BlackBlouse();
         blackBlouse.womenTab.click();
         blackBlouse.topsTab.click();
         blackBlouse.blousesTab.click();
