@@ -1,9 +1,11 @@
 package app.pom;
 
 import app.shared.SystemBar;
+import config.Config;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Dresses extends SystemBar {
 
@@ -31,8 +33,24 @@ public class Dresses extends SystemBar {
     @FindBy(xpath = "//a[@title='Proceed to checkout']")
     public WebElement proceedToCheckoutButton;
 
+    @FindBy(xpath = "//div[@id='uniform-layered_id_attribute_group_2']//input[@id='layered_id_attribute_group_2']")
+    public WebElement mediumSizeOption;
+
+    @FindBy(xpath = "//ul[@id='ul_layered_id_attribute_group_3']//input[@id='layered_id_attribute_group_13']")
+    public WebElement orangeColorOption;
+
+    @FindBy(xpath = "//div[@id='uniform-layered_id_feature_13']//input[@id='layered_id_feature_13']")
+    public WebElement girlyStyleOption;
+
+    @FindBy(xpath = "//div[@id='enabled_filters']//li")
+    public WebElement filterConfirmation;
+
+
     public static Dresses navigateToDresses() {
         Homepage homepage = new Homepage();
+        Login login = homepage.clickLoginButton();
+
+        login.login(appConfig.get(Config.AppProperties.USER), appConfig.get(Config.AppProperties.PASSWORD));
         homepage.clickDressesButton();
 
         return new Dresses();
@@ -53,6 +71,21 @@ public class Dresses extends SystemBar {
 
         return new ShoppingCartSummary();
 
+    }
+
+    public void selectGirlyStyleOption() {
+        safeClickOnElement(girlyStyleOption);
+        webDriverWait.until(ExpectedConditions.visibilityOf(filterConfirmation));
+    }
+
+    public void selectOrangeColor() {
+        safeClickOnElement(orangeColorOption);
+        webDriverWait.until(ExpectedConditions.visibilityOf(filterConfirmation));
+    }
+
+    public void selectMediumSizeCheckbox() {
+        safeClickOnElement(mediumSizeOption);
+        webDriverWait.until(ExpectedConditions.visibilityOf(filterConfirmation));
     }
 
     public void hoverFirstDress() {

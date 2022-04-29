@@ -1,34 +1,35 @@
 package test_app.smoke.transactions;
 
 import app.pom.*;
+import config.Config;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import test_base.TestBasePage;
 
 public class ShoppingCart extends TestBasePage {
 
-    // region Sami's Example Test Case
-    @Test
-    public void testAddItemToCart() {
-        Homepage homepage = new Homepage();
-        homepage.hoverOverWomenButton();
-        SummerDresses summerDresses = homepage.clickWomenHoverMenuDressesSummerDressesButton();
-
-        summerDresses.setUpperPriceRange(20.00);
-        summerDresses.hoverOverFirstItem();
-        summerDresses.clickPrintedChiffonDressQuickViewButton();
-
-        int desiredQuantity = 3;
-        String size = "M";
-        summerDresses.addItemToCart(desiredQuantity, size);
-
-        String expectedMessage = "Product successfully added to your shopping cart";
-
-        Assert.assertEquals(summerDresses.getShoppingCartModalSuccessOrFailMessage(), expectedMessage);
-        Assert.assertEquals(summerDresses.getShoppingCartModalQuantityCount(), desiredQuantity);
-
-    }
-    // endregion
+//    // region Sami's Example Test Case
+//    @Test
+//    public void testAddItemToCart() {
+//        Homepage homepage = new Homepage();
+//        homepage.hoverOverWomenButton();
+//        SummerDresses summerDresses = homepage.clickWomenHoverMenuDressesSummerDressesButton();
+//
+//        summerDresses.setUpperPriceRange(20.00);
+//        summerDresses.hoverOverFirstItem();
+//        summerDresses.clickPrintedChiffonDressQuickViewButton();
+//
+//        int desiredQuantity = 3;
+//        String size = "M";
+//        summerDresses.addItemToCart(desiredQuantity, size);
+//
+//        String expectedMessage = "Product successfully added to your shopping cart";
+//
+//        Assert.assertEquals(summerDresses.getShoppingCartModalSuccessOrFailMessage(), expectedMessage);
+//        Assert.assertEquals(summerDresses.getShoppingCartModalQuantityCount(), desiredQuantity);
+//
+//    }
+//    // endregion
 
     @Test
     public void testAddItemToShoppingCart() {
@@ -59,11 +60,10 @@ public class ShoppingCart extends TestBasePage {
         ShoppingCartSummary shoppingCartSummary = new ShoppingCartSummary();
         shoppingCartSummary.removeSingleItem();
 
-        String expectedQuantity = "2";
-        String actualQuantity = String.valueOf(shoppingCartSummary.productQuantitySummary.getText().contains("2"));
+        String actualQuantity = String.valueOf(shoppingCartSummary.productQuantitySummary.getText());
         System.out.println(actualQuantity);
 
-        Assert.assertEquals(actualQuantity, expectedQuantity);
+        Assert.assertTrue(actualQuantity.contains("2"));
 
     }
 

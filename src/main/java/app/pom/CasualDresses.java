@@ -1,6 +1,7 @@
 package app.pom;
 
 import app.shared.Products;
+import config.Config;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -24,6 +25,9 @@ public class CasualDresses extends Products {
 
     public static CasualDresses navigateToCasualDresses() {
         Homepage homepage = new Homepage();
+        Login login = homepage.clickLoginButton();
+
+        login.login(appConfig.get(Config.AppProperties.USER), appConfig.get(Config.AppProperties.PASSWORD));
         homepage.hoverOverDressesButton();
         homepage.clickDressesHoverMenuCasualDressesButton();
 

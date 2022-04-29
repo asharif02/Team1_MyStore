@@ -23,12 +23,6 @@
         </classes>
     </test>
 
-    <test name="Smoke - Registration (Profile)">
-        <classes>
-            <class name="test_app.smoke.registration.Profile"/>
-        </classes>
-    </test>
-
     <test name="Smoke - Transactions (ShoppingCart)">
         <classes>
             <class name="test_app.smoke.registration.Profile"/>
@@ -38,6 +32,12 @@
     <test name="Functional (ItemSearch)">
         <classes>
             <class name="test_app.functional.ItemSearch"/>
+        </classes>
+    </test>
+
+    <test name="Functional (FilterItems)">
+        <classes>
+            <class name="test_app.functional.FilterItems"/>
         </classes>
     </test>
 
