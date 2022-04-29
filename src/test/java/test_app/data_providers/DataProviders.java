@@ -1,4 +1,4 @@
-package data_providers;
+package test_app.data_providers;
 
 import org.testng.annotations.DataProvider;
 import utils.ExcelData;
