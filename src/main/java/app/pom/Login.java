@@ -31,7 +31,14 @@ public class Login extends SystemBar {
     @FindBy (xpath = "//*[@id='add_to_cart']/button/span[1]")
     public WebElement addToCart;
 
+    //testcase5
+    @FindBy (xpath = "//a[@href=\"http://automationpractice.com/index.php?fc=module&module=blockwishlist&controller=mywishlist\"]")
+    public WebElement newWishlist;
+
+    @FindBy (xpath = "//*[@class='inputTxt form-control']")
+    public WebElement wishlistName;
     //------------------
+
 
     @FindBy(id = "email_create")
     public WebElement newEmailAddressInputField;
