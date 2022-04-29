@@ -49,6 +49,27 @@ public class Login extends SystemBar {
     @FindBy(xpath = "//*[@class='icon-th-list']")
     public WebElement listView;
 
+    //Testcase10
+    @FindBy(xpath = "//input[@class='search_query form-control ac_input']")
+    public WebElement searchBar4;
+
+    @FindBy(xpath = "//*[@class='icon-th-list']")
+    public WebElement listView1;
+
+    @FindBy (xpath = "//*[@class='button lnk_view btn btn-default']")
+    public WebElement clickMoreButton;
+
+    @FindBy (xpath = "//*[@class='open-comment-form']")
+    public WebElement clickingOnWritingAReviewButton;
+
+    @FindBy (xpath = "//*[@id='comment_title']")
+    public WebElement reviewTitle;
+
+    @FindBy (xpath = "//*[@id=\"content\"]")
+    public WebElement writingTheReview;
+
+    @FindBy (xpath = "//*[@id='submitNewMessage']")
+    public WebElement submitttingReview;
     //testcase8
   //  @FindBy (xpath = "//*[@class='blockbestsellers']")
    // public WebElement bestSellerButton;
