@@ -23,4 +23,18 @@
         </classes>
     </test>
 
+    <test name="Smoke">
+        <classes>
+            <class name="test_app.smoke.transactions.WomenButton"/>
+        </classes>
+    </test>
+
+
+    <test name="BAT - System">
+        <classes>
+            <class name="test_app.build_acceptance.system.Authentication"/>
+        </classes>
+    </test>
+
+
 </suite>

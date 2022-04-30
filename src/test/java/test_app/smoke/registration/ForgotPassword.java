@@ -16,13 +16,11 @@ public class ForgotPassword extends TestBasePage {
         Homepage homepage=new Homepage();
         homepage.signInButton2.click();
         homepage.forgotPasswordButton.click();
-        homepage.forgotPasswordButton.sendKeys("FORGOT YOUR PASSWORD?");
+        homepage.forgotPasswordButton.sendKeys("rominagad4@gmail.com");
         homepage.forgotPasswordButton.sendKeys(Keys.ENTER);
 
-        //String actualtext =driver.findElement(By.xpath("//form[@id='form_forgotpassword']")).getText();
-        //String expectedtext ="FORGOT YOUR PASSWORD";
 
-        Assert.assertTrue(true,"FORGOT YOUR PASSWORD?");
+        Assert.assertTrue(true,"rominagad4@gmail.com");
     }
 }
 

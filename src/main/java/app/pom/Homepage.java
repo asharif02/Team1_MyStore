@@ -53,10 +53,11 @@ public class Homepage extends SystemBar {
     @FindBy(xpath = "//a[@class='login']")
     public WebElement signInButton;
 
-    /////
+    ///
     @FindBy(xpath = "//a[@class='login']")
     public WebElement signInButton2;
-    @FindBy(xpath = "//a[@title='Recover your forgotten password']")
+// Test Forgot Password
+    @FindBy(xpath = "//input[@id='email']")
     public WebElement forgotPasswordButton;
 
     public void setForgotPasswordButton(String item) {

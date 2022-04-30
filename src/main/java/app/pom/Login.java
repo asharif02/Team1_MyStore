@@ -22,6 +22,7 @@ public class Login extends SystemBar {
     @FindBy(xpath = "//i[@class='icon-building']")
     public WebElement myAddress;
 ////i[@class='icon-remove right']
+
     @FindBy(xpath = "(//a[@class='btn btn-default button button-small'])[2]")
     public WebElement updateMyAddress;
 
