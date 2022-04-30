@@ -1,4 +1,4 @@
-package test_app.smoke.transactions;
+package test_app.smoke.registration;
 
 import app.pom.Homepage;
 import org.apache.commons.math3.filter.KalmanFilter;

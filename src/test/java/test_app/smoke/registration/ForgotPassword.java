@@ -1,6 +1,7 @@
 package test_app.smoke.registration;
 
 import app.pom.Homepage;
+import app.pom.Login;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
@@ -15,13 +16,13 @@ public class ForgotPassword extends TestBasePage {
         Homepage homepage=new Homepage();
         homepage.signInButton2.click();
         homepage.forgotPasswordButton.click();
-        //homepage.forgotPasswordButton.sendKeys("Email address");
-        //homepage.forgotPasswordButton.sendKeys(Keys.ENTER);
+        homepage.forgotPasswordButton.sendKeys("FORGOT YOUR PASSWORD?");
+        homepage.forgotPasswordButton.sendKeys(Keys.ENTER);
 
         //String actualtext =driver.findElement(By.xpath("//form[@id='form_forgotpassword']")).getText();
-        //String expectedtext ="Email address";
+        //String expectedtext ="FORGOT YOUR PASSWORD";
 
-        //Assert.assertEquals(actualtext,expectedtext);
+        Assert.assertTrue(true,"FORGOT YOUR PASSWORD?");
     }
 }
 
