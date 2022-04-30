@@ -56,7 +56,15 @@ public class GenerateData {
         return faker.bothify("!??##?$#?##?##??#");
 
     }
-
+    //Zohra's region
+//    public static String subjectHeader(){
+//        return faker.bothify("Customer Service");
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(email());
+//    }
+    //Region end
     public static String[] dateOfBirth() {
         DateFormat df = new SimpleDateFormat("yyyyMMdd");
         Date dob = faker.date().birthday();
