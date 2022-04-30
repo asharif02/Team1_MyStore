@@ -1,4 +1,4 @@
-## Assignment 1 (Automation Practice - MyStore)
+## Assignment 2 (Automation Practice - MyStore)
 
 ### HOMEWORK: 
 - **DUE SATURDAY, APRIL 30**
