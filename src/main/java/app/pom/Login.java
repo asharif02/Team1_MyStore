@@ -67,6 +67,16 @@ public class Login extends SystemBar {
 
     @FindBy(id = "SubmitLogin")
     public WebElement signInButton;
+// Test case Add to cart
+    @FindBy(xpath = "//input[@class='search_query form-control ac_input']")
+    public WebElement searchBarA;
+
+    @FindBy(xpath = " (//img[@alt='Printed Dress'])[1]")
+    public WebElement itemHover;
+
+    @FindBy (xpath = "(//a[@class='button ajax_add_to_cart_button btn btn-default'])[2]")
+    public WebElement addToCart;
+ // Test case
 
     @FindBy(xpath = "//div[@id='center_column']/div[@class='alert alert-danger']")
     public WebElement errorMessageBanner;
