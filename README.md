@@ -12,14 +12,14 @@
     - Test Data
     - Expected Results
   - Run all of your tests using TestNGRunner and generate a single report that includes all 10 test case executions.
-   - Each person should strive for 80%+ pass rate
+    - Each person should strive for 80%+ pass rate
 - The group must work together to create your group’s:
   - Project structure
   - Github repository
-   - Add all group members as contributors to the repo
+    - Add all group members as contributors to the repo
 - Team members are responsible for
   - Pulling/cloning the project
-   - Make sure your local repo points to the remote repo
+    - Make sure your local repo points to the remote repo
   - Each member will create their own branch
 - Each team is responsible for the sum of the work
   - If individuals are not responsive or able to contribute, then the required work must be distributed to the remainder of the team
