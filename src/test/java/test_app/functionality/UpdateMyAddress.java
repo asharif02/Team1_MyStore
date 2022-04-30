@@ -1,4 +1,4 @@
-package functionality;
+package test_app.functionality;
 import app.pom.Homepage;
 import app.pom.Login;
 import config.Config;

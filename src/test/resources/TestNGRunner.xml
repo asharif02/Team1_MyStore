@@ -30,9 +30,58 @@
     </test>
 
 
-    <test name="BAT - System">
+    <test name="Smoke">
         <classes>
-            <class name="test_app.build_acceptance.system.Authentication"/>
+            <class name="test_app.smoke.registration.ForgotPassword"/>
+        </classes>
+    </test>
+
+
+    <test name="Functionality">
+        <classes>
+            <class name="test_app.functionality.MyWishList"/>
+        </classes>
+    </test>
+
+    <test name="Functionality">
+        <classes>
+            <class name="test_app.functionality.UpdateMyAddress"/>
+        </classes>
+    </test>
+
+    <test name="Smoke">
+        <classes>
+            <class name="test_app.smoke.registration.Search"/>
+        </classes>
+    </test>
+
+    <test name="Smoke">
+        <classes>
+            <class name="test_app.smoke.registration.SignIn"/>
+        </classes>
+    </test>
+
+    <test name="Functionality">
+        <classes>
+            <class name="test_app.functionality.Subscription"/>
+        </classes>
+    </test>
+
+    <test name="Smoke">
+        <classes>
+            <class name="test_app.smoke.transactions.TestContactUs"/>
+        </classes>
+    </test>
+
+    <test name="Smoke">
+        <classes>
+            <class name="test_app.smoke.transactions.AddToCart"/>
+        </classes>
+    </test>
+
+    <test name="Functionality">
+        <classes>
+            <class name="test_app.functionality.WrittingReview"/>
         </classes>
     </test>
 
