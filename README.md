@@ -6,11 +6,11 @@
   - Must use Excel and/or DB for test parameterization/assertions
   - Must use at least 1 DataProvider
   - Document all of your test cases like this
-   - Test Name
-   - Summary
-   - Test Steps
-   - Test Data
-   - Expected Results
+    - Test Name
+    - Summary
+    - Test Steps
+    - Test Data
+    - Expected Results
   - Run all of your tests using TestNGRunner and generate a single report that includes all 10 test case executions.
    - Each person should strive for 80%+ pass rate
 - The group must work together to create your group’s:
