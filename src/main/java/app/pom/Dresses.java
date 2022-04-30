@@ -45,6 +45,11 @@ public class Dresses extends SystemBar {
     @FindBy(xpath = "//div[@id='enabled_filters']//li")
     public WebElement filterConfirmation;
 
+    @FindBy(xpath = "//a[@class='addToWishlist wishlistProd_3']")
+    public WebElement addToWishListButton;
+
+    @FindBy(xpath = "//p[@class='fancybox-error']")
+    public WebElement wishListConfirmation;
 
     public static Dresses navigateToDresses() {
         Homepage homepage = new Homepage();
@@ -54,6 +59,12 @@ public class Dresses extends SystemBar {
         homepage.clickDressesButton();
 
         return new Dresses();
+    }
+
+    public void addItemToWishList() {
+        hoverFirstDress();
+        clickAddToWishlist();
+
     }
 
     public ShoppingCartSummary addMultipleItemsToCart() {
@@ -71,6 +82,10 @@ public class Dresses extends SystemBar {
 
         return new ShoppingCartSummary();
 
+    }
+
+    public void clickAddToWishlist() {
+        safeClickOnElement(addToWishListButton);
     }
 
     public void selectGirlyStyleOption() {

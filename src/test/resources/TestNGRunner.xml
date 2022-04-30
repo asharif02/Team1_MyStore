@@ -25,7 +25,13 @@
 
     <test name="Smoke - Transactions (ShoppingCart)">
         <classes>
-            <class name="test_app.smoke.registration.Profile"/>
+            <class name="test_app.smoke.transactions.ShoppingCart"/>
+        </classes>
+    </test>
+
+    <test name="Smoke - Transactions (WishList)">
+        <classes>
+            <class name="test_app.smoke.transactions.WishList"/>
         </classes>
     </test>
 
